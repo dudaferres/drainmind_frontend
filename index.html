@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrainMind - Sistema Inteligente de Drenagem Urbana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/mind.png" type="image/x-icon">
+</head>
+<body class="bg-gray-50">
+        <!-- Header -->
+        <header class="gradient-bg fixed w-full top-0 z-50 shadow-lg">
+            <nav class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                        <h1 class="text-white text-2xl font-bold">DrainMind</h1>
+                    </div>
+                    
+                    <ul class="nav-menu hidden md:flex space-x-8 text-white">
+                        <li><a href="#home" class="hover:text-blue-200 transition-colors">Início</a></li>
+                        <li><a href="#problem" class="hover:text-blue-200 transition-colors">Problema</a></li>
+                        <li><a href="#solution" class="hover:text-blue-200 transition-colors">Solução</a></li>
+                        <li><a href="#how-it-works" class="hover:text-blue-200 transition-colors">Como Funciona</a></li>
+                        <li><a href="#features" class="hover:text-blue-200 transition-colors">Diferenciais</a></li>
+                        <li><a href="#pitch" class="hover:text-blue-200 transition-colors">Pitch</a></li>
+                    </ul>
+                    
+                    <div class="hamburger md:hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+        <!-- Hero Section -->
+        <section id="home" class="gradient-bg min-h-screen flex items-center justify-center text-white relative overflow-hidden py-32">
+            <div class="absolute inset-0 opacity-10">
+                <div class="floating-animation absolute top-20 left-10 text-6xl">💧</div>
+                <div class="floating-animation absolute top-40 right-20 text-4xl" style="animation-delay: 1s;">🏙️</div>
+                <div class="floating-animation absolute bottom-20 left-20 text-5xl" style="animation-delay: 2s;">🧠</div>
+            </div>
+            
+            <div class="container mx-auto px-8 text-center relative z-10">
+                <div class="fade-in">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                        Drain<span class="text-blue-200">Mind</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                        Sistema Inteligente de Drenagem Urbana com IA
+                    </p>
+                    <p class="text-lg md:text-xl mb-12 max-w-4xl mx-auto opacity-90">
+                        Bueiros equipados com sensores, microatuadores e inteligência artificial para monitorar, limpar e otimizar o fluxo da água, prevenindo enchentes de forma autônoma e em tempo real.
+                    </p>
+                    <button onclick="scrollToSection('problem')" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg">
+                        Descobrir Mais
+                    </button>
+                </div>
+            </div>
+            
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i class="fas fa-chevron-down text-white text-2xl"></i>
+            </div>
+        </section>
+    
+        <div class="h-2 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+    
+        <!-- Problem Section -->
+        <section id="problem" class="py-32 bg-white">
+            <div class="container mx-auto px-8">
+                <div class="text-center mb-20 fade-in">
+                    <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">O Problema</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        As enchentes são um dos maiores desafios das cidades modernas, causando prejuízos bilionários e colocando diversas vidas em risco.
+                    </p>
+                </div>
+                
+                <div class="problem-stats">
+                    <div class="card-hover stat-card p-8 rounded-2xl text-center">
+                        <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-exclamation-triangle text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-blue-800 mb-3">R$ 15 Bilhões</h3>
+                        <p class="text-gray-700 font-medium">Estimativa de prejuízos anuais por enchentes no Brasil</p>
+                    </div>
+                    
+                    <div class="card-hover stat-card p-8 rounded-2xl text-center">
+                        <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-home text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-blue-800 mb-3">8,2 Milhões</h3>
+                        <p class="text-gray-700 font-medium">De pessoas afetadas por enchentes anualmente</p>
+                    </div>
+                    
+                    <div class="card-hover stat-card p-8 rounded-2xl text-center">
+                        <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-clock text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-blue-800 mb-3">72 Horas</h3>
+                        <p class="text-gray-700 font-medium">Tempo médio para normalização após enchentes</p>
+                    </div>
+                    
+                    <div class="card-hover stat-card p-8 rounded-2xl text-center">
+                        <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-tools text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-blue-800 mb-3">Sistema Reativo</h3>
+                        <p class="text-gray-700 font-medium">Infraestrutura atual só age após o problema</p>
+                    </div>
+                </div>
+                
+                <div class="mt-20 grid md:grid-cols-2 gap-16 items-center">
+                    <div class="slide-in-left">
+                        <h3 class="text-3xl font-bold mb-8 text-gray-800">Principais Causas</h3>
+                        <ul class="space-y-6">
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-times-circle text-blue-500 mt-1"></i>
+                                <span class="text-gray-700">Bueiros entupidos por lixo e detritos</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-times-circle text-blue-500 mt-1"></i>
+                                <span class="text-gray-700">Falta de monitoramento em tempo real</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-times-circle text-blue-500 mt-1"></i>
+                                <span class="text-gray-700">Sistema de drenagem inadequado</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-times-circle text-blue-500 mt-1"></i>
+                                <span class="text-gray-700">Manutenção reativa, não preventiva</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="slide-in-right">
+                        <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-8 rounded-2xl">
+                            <i class="fas fa-cloud-rain text-6xl text-blue-600 mb-4"></i>
+                            <h4 class="text-2xl font-bold text-gray-800 mb-4">Cenário Atual</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                As cidades dependem de sistemas de drenagem passivos que não conseguem se adaptar às condições climáticas em tempo real, resultando em enchentes frequentes e custosas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <div class="h-2 bg-gradient-to-r from-gray-200 to-gray-300"></div>
+    
+        <!-- Solution Section -->
+        <section id="solution" class="py-32 bg-gray-50">
+            <div class="container mx-auto px-8">
+                <div class="text-center mb-20 fade-in">
+                    <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Nossa Solução</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        O DrainMind revoluciona a gestão de drenagem urbana com tecnologia de ponta e inteligência artificial.
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+                    <div class="slide-in-left">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg">
+                            <div class="flex items-center mb-8">
+                                <i class="fas fa-brain text-blue-600 text-3xl mr-4"></i>
+                                <h3 class="text-3xl font-bold text-gray-800">DrainMind</h3>
+                            </div>
+                            <p class="text-gray-700 text-lg leading-relaxed mb-8">
+                                Um sistema inteligente que combina <strong>sensores avançados</strong>, <strong>microatuadores</strong> e <strong>inteligência artificial</strong> para criar uma rede de drenagem urbana completamente autônoma e adaptativa.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check-circle text-blue-500"></i>
+                                    <span class="text-gray-700">Monitoramento 24/7 em tempo real</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check-circle text-blue-500"></i>
+                                    <span class="text-gray-700">Limpeza automática de detritos</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check-circle text-blue-500"></i>
+                                    <span class="text-gray-700">Redirecionamento inteligente do fluxo</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check-circle text-blue-500"></i>
+                                    <span class="text-gray-700">Prevenção proativa de enchentes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide-in-right">
+                        <div class="relative">
+                            <div class="bg-gradient-to-br from-blue-500 to-blue-700 p-8 rounded-2xl text-white">
+                                <h4 class="text-2xl font-bold mb-6">Tecnologias Integradas</h4>
+                                <div class="space-y-4">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-microchip text-blue-200"></i>
+                                        <span>Sensores IoT de última geração</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-robot text-blue-200"></i>
+                                        <span>Inteligência Artificial avançada</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-cogs text-blue-200"></i>
+                                        <span>Microatuadores precisos</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-wifi text-blue-200"></i>
+                                        <span>Conectividade 5G/LoRaWAN</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-cloud text-blue-200"></i>
+                                        <span>Processamento em nuvem</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute -top-4 -right-4 bg-blue-400 text-white px-4 py-2 rounded-full font-bold pulse-animation">
+                                Inovação!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <div class="h-2 bg-gradient-to-r from-gray-200 to-gray-300"></div>
+    
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-32 bg-white">
+            <div class="container mx-auto px-8">
+                <div class="text-center mb-20 fade-in">
+                    <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Como Funciona</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Descubra o processo inteligente por trás do DrainMind e como ele previne enchentes de forma autônoma.
+                    </p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item fade-in">
+                        <div class="bg-blue-50 p-8 rounded-2xl border-2 border-blue-200">
+                            <h3 class="text-2xl font-bold text-blue-700 mb-4">1. Monitoramento Contínuo</h3>
+                            <p class="text-gray-700 text-lg">Sensores IoT monitoram constantemente o nível da água, fluxo e obstruções (lixo, folhas, etc).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item fade-in">
+                        <div class="bg-blue-50 p-8 rounded-2xl border-2 border-blue-200">
+                            <h3 class="text-2xl font-bold text-blue-700 mb-4">2. Análise Inteligente</h3>
+                            <p class="text-gray-700 text-lg">A IA processa os dados coletados, identifica padrões e prevê possíveis problemas antes que se tornem críticos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item fade-in">
+                        <div class="bg-blue-50 p-8 rounded-2xl border-2 border-blue-200">
+                            <h3 class="text-2xl font-bold text-blue-700 mb-4">3. Ação Automática</h3>
+                            <p class="text-gray-700 text-lg">Microatuadores executam ações preventivas: limpeza de detritos, abertura/fechamento de comportas e redirecionamento do fluxo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item fade-in">
+                        <div class="bg-blue-50 p-8 rounded-2xl border-2 border-blue-200">
+                            <h3 class="text-2xl font-bold text-blue-700 mb-4">4. Otimização Contínua</h3>
+                            <p class="text-gray-700 text-lg">O sistema aprende com cada situação, melhorando continuamente suas respostas e eficiência operacional.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-20 text-center">
+                    <button onclick="openModal('techModal')" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-700 hover:to-blue-900 transition-all transform hover:scale-105 shadow-lg">
+                        Ver Detalhes Técnicos
+                    </button>
+                </div>
+            </div>
+        </section>
+    
+        <div class="h-2 bg-gradient-to-r from-gray-200 to-gray-300"></div>
+    
+        <!-- Features Section -->
+        <section id="features" class="py-32 bg-gray-50 relative overflow-hidden">
+            <!-- Background decorativo mais sutil -->
+            <div class="absolute inset-0 opacity-3">
+                <div class="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-300 rounded-full blur-3xl"></div>
+            </div>
+            
+            <div class="container mx-auto px-8 relative z-10">
+                <div class="text-center mb-20 fade-in">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl mb-6">
+                        <i class="fas fa-cloud text-white text-2xl"></i>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-bold gradient-text mb-6">Diferenciais e Inovações</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-700 mx-auto mb-6 rounded-full"></div>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                        O que torna o DrainMind único no mercado de soluções urbanas inteligentes e como nossa tecnologia revoluciona a gestão de drenagem.
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mb-16">
+                    <!-- Card 1 - Visão Computacional -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-blue-500 rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                        <div class="relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+                            <div class="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-eye text-white text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Detecção Computacional</h3>
+                            <p class="text-gray-600 leading-relaxed text-lg mb-6">
+                                Sensores inteligentes com IA avançada identificam tipos específicos de detritos, animais e objetos em tempo real.
+                            </p>
+                            <div class="space-y-2">
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Reconhecimento de objetos em tempo real</span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Análise de padrões de obstrução</span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Detecção de vida selvagem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Card 2 - Sustentabilidade -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-blue-500 rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                        <div class="relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+                            <div class="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-leaf text-white text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Sustentabilidade</h3>
+                            <p class="text-gray-600 leading-relaxed text-lg mb-6">
+                                Sistema 100% sustentável com componentes de baixo consumo para operação ecológica e captura de lixos.
+                            </p>
+                            <div class="space-y-2">
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Reciclagem de detritos</span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Componentes recicláveis</span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Baixos gastos de energia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Card 3 - Rede Inteligente -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-blue-500 rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                        <div class="relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+                            <div class="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-network-wired text-white text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Rede Inteligente</h3>
+                            <p class="text-gray-600 leading-relaxed text-lg mb-6">
+                                Comunicação mesh entre dispositivos permite coordenação em tempo real e otimização do sistema.
+                            </p>
+                            <div class="space-y-2">
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Comunicação mesh avançada</span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Sincronização automática</span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Redundância de rede</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Card 4 - Prevenção Proativa -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-blue-500 rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                        <div class="relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+                            <div class="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-shield-alt text-white text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Prevenção Proativa</h3>
+                            <p class="text-gray-600 leading-relaxed text-lg mb-6">
+                                Algoritmos preditivos antecipam problemas e agem antes que enchentes ocorram.
+                            </p>
+                            <div class="space-y-2">
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Possível predição meteorológica</span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Análise de tendências</span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Alertas antecipados</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Card 5 - App de Gestão -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-blue-500 rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                        <div class="relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+                            <div class="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-mobile-alt text-white text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">App de Gestão</h3>
+                            <p class="text-gray-600 leading-relaxed text-lg mb-6">
+                                Interface intuitiva para gestores públicos monitorarem e controlarem todo o sistema.
+                            </p>
+                            <div class="space-y-2">
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Dashboard em tempo real</span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Controle remoto</span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Notificações push</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Card 6 - Analytics Avançado -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-blue-500 rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                        <div class="relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+                            <div class="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-chart-line text-white text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Analytics Avançado</h3>
+                            <p class="text-gray-600 leading-relaxed text-lg mb-6">
+                                Relatórios detalhados e insights para planejamento urbano e melhoria contínua.
+                            </p>
+                            <div class="space-y-2">
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Big Data Analytics</span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Relatórios automáticos</span>
+                                </div>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-check text-blue-500 mr-2"></i>
+                                    <span>Insights preditivos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Seção de destaque com cores mais sutis -->
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-12 text-white text-center">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="flex items-center justify-center mb-6">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center mr-4">
+                                <i class="fas fa-rocket text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-3xl font-bold">Tecnologia de Ponta</h3>
+                        </div>
+                        <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                            Combinamos as mais avançadas tecnologias de IoT, IA e automação para criar um sistema que não apenas reage aos problemas, mas os previne antes mesmo que aconteçam.
+                        </p>
+                        <div class="grid md:grid-cols-3 gap-8">
+                            <div class="text-center">
+                                <div class="text-4xl font-bold text-blue-200 mb-2">99.9%</div>
+                                <div class="text-blue-300">Eficiência na Prevenção</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-4xl font-bold text-blue-200 mb-2">24/7</div>
+                                <div class="text-blue-300">Monitoramento Contínuo</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-4xl font-bold text-blue-200 mb-2">85%</div>
+                                <div class="text-blue-300">Redução de Custos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <div class="h-2 bg-gradient-to-r from-gray-200 to-gray-300"></div>
+    
+        <!-- Pitch Section -->
+        <section id="pitch" class="py-32 bg-white">
+        <div class="container mx-auto px-8">
+            <div class="text-center mb-20 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Vídeo Pitch</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Assista à apresentação completa do pitch da DrainMind baseado nas aulas de Storytelling e Insipiração Empreendedora.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <div class="aspect-video bg-black rounded-xl overflow-hidden relative cursor-pointer" onclick="window.open('https://www.youtube.com/watch?v=SLZlR1FCg-s', '_blank')">
+                <img 
+                    src="https://img.youtube.com/vi/SLZlR1FCg-s/maxresdefault.jpg" 
+                    alt="DrainMind - Vídeo Pitch" 
+                    class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="bg-red-600 rounded-full w-16 h-16 flex items-center justify-center">
+                        <i class="fas fa-play text-white text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+            
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-7 text-white text-center">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <i class="fas fa-clock text-green-400 text-2xl mb-2"></i>
+                            <p class="font-semibold">Duração</p>
+                            <p class="text-gray-300">5:03 minutos</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-lightbulb text-yellow-400 text-2xl mb-2"></i>
+                            <p class="font-semibold">Conteúdo</p>
+                            <p class="text-gray-300">Apresentação da DrainMind</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-users text-purple-400 text-2xl mb-2"></i>
+                            <p class="font-semibold">Público</p>
+                            <p class="text-gray-300">Gestores e investidores</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </section>
+    
+    <div class="h-2 bg-gradient-to-r from-gray-200 to-gray-300"></div>
+    
+        <!-- Footer -->
+        <footer class="gradient-bg text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <div class="flex items-center space-x-2 mb-4">
+                            <i class="fas fa-brain text-2xl"></i>
+                            <h3 class="text-2xl font-bold">DrainMind</h3>
+                        </div>
+                        <p class="text-blue-100 leading-relaxed">
+                            Revolucionando a gestão de drenagem urbana com inteligência artificial e tecnologia de ponta.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">Contato</h4>
+                        <div class="space-y-2 text-blue-100">
+                            <p><i class="fas fa-envelope mr-2"></i> contato@drainmind.com</p>
+                            <p><i class="fas fa-phone mr-2"></i> +55 (11) 9999-9999</p>
+                            <p><i class="fas fa-map-marker-alt mr-2"></i> São Paulo, SP</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">Alunas</h4>
+                        <div class="space-y-2 text-blue-100">
+                            <p>Maria Eduarda Ferrés - RM 560418</p>
+                            <p>Gabriela Queiroga Cocuzza da Silva - RM 560035</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-t border-blue-300 mt-8 pt-8 text-center text-blue-100">
+                    <p>&copy; 2025 DrainMind. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- Modals técnicos -->
+        <div id="techModal" class="modal">
+            <div class="modal-content max-w-4xl">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-3xl font-bold gradient-text">Detalhes Técnicos</h2>
+                    <button onclick="closeModal('techModal')" class="text-gray-500 hover:text-gray-700 text-2xl">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="tech-grid">
+                    <div class="bg-blue-50 p-8 rounded-2xl border-2 border-blue-200">
+                        <h3 class="text-2xl font-bold text-blue-700 mb-4">Sensores IoT</h3>
+                        <ul class="space-y-3 text-gray-700 text-lg">
+                            <li>• Sensor de nível ultrassônico</li>
+                            <li>• Sensor de fluxo eletromagnético</li>
+                            <li>• Sensor de pH e qualidade da água</li>
+                            <li>• Sensor de temperatura e umidade</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-8 rounded-2xl border-2 border-blue-200">
+                        <h3 class="text-2xl font-bold text-blue-700 mb-4">Inteligência Artificial</h3>
+                        <ul class="space-y-3 text-gray-700 text-lg">
+                            <li>• Redes neurais profundas</li>
+                            <li>• Algoritmos de previsão temporal</li>
+                            <li>• Processamento de linguagem natural</li>
+                            <li>• Visão computacional avançada</li>
+                            <li>• Aprendizado por reforço</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-8 rounded-2xl border-2 border-blue-200">
+                        <h3 class="text-2xl font-bold text-blue-700 mb-4">Microatuadores</h3>
+                        <ul class="space-y-3 text-gray-700 text-lg">
+                            <li>• Comportas automáticas</li>
+                            <li>• Sistema de limpeza rotativo</li>
+                            <li>• Bombas de redirecionamento</li>
+                            <li>• Válvulas de controle de fluxo</li>
+                            <li>• Mecanismo de filtragem</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-8 rounded-2xl border-2 border-blue-200">
+                        <h3 class="text-2xl font-bold text-blue-700 mb-4">Conectividade</h3>
+                        <ul class="space-y-3 text-gray-700 text-lg">
+                            <li>• Rede 5G para alta velocidade</li>
+                            <li>• Wi-Fi 6 para áreas urbanas</li>
+                            <li>• Bluetooth para manutenção</li>
+                            <li>• Comunicação mesh entre dispositivos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html
