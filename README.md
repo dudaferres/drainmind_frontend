@@ -58,6 +58,12 @@ A landing page do projeto apresenta uma interface moderna, responsiva e interati
 
 ---
 
+## 💌 GitHub Pages
+
+[Clique aqui](https://dudaferres.github.io/drainmind_frontend/)
+
+---
+
 ## 👥 Desenvolvedoras
 
 - **Maria Eduarda Ferrés** — RM 560418  
