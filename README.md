@@ -1,41 +1,41 @@
-# DrainMind
+# DrainMind - Front-end Design
 
 **Sistema Inteligente de Drenagem Urbana com IA**
 
-![Logo DrainMind](./assets/mind.png)
+---
 
-## Descrição
+## 💧 Sobre o Projeto
 
-DrainMind é uma solução inovadora para gestão de drenagem urbana, utilizando sensores IoT, microatuadores e inteligência artificial para monitorar, limpar e otimizar o fluxo de água em bueiros, prevenindo enchentes de forma autônoma e em tempo real.
+**DrainMind** é uma solução inteligente para o gerenciamento de drenagem urbana, combinando sensores IoT, microatuadores e inteligência artificial para **monitorar, limpar e otimizar bueiros de forma autônoma e em tempo real**, prevenindo enchentes nas cidades.
 
-O projeto apresenta uma landing page moderna, responsiva e interativa, destacando o problema das enchentes, a solução proposta, diferenciais tecnológicos, vídeo pitch e galeria de recursos.
+A landing page do projeto apresenta uma interface moderna, responsiva e interativa, destacando o problema das enchentes, a solução proposta e seus diferenciais tecnológicos.
 
 ---
 
-## Funcionalidades
+## ⚙️ Funcionalidades
 
-- **Apresentação do problema das enchentes urbanas com dados reais**
-- **Destaque para as principais causas e impactos**
-- **Descrição detalhada da solução DrainMind**
-- **Cards interativos com diferenciais e inovações**
-- **Linha do tempo explicando o funcionamento do sistema**
-- **Vídeo pitch integrado**
-- **Galeria de recursos e protótipos**
-- **Design responsivo e animações modernas**
-- **Modal com detalhes técnicos das tecnologias utilizadas**
-
----
-
-## Tecnologias Utilizadas
-
-- **HTML5** e **CSS3** (com TailwindCSS para estilização)
-- **JavaScript** para interatividade e animações
-- **Font Awesome** para ícones
-- **Imagens e ícones customizados** (pasta `/assets`)
+- Apresentação do problema das enchentes com dados reais e relevantes  
+- Análise das principais causas e impactos urbanos  
+- Explicação detalhada da solução DrainMind  
+- Cards interativos destacando diferenciais e inovações tecnológicas  
+- Linha do tempo ilustrando o funcionamento do sistema  
+- Vídeo pitch integrado à página  
+- Galeria de recursos, imagens e protótipos  
+- Design responsivo, com animações modernas e suaves  
+- Modal com detalhes técnicos das tecnologias aplicadas  
 
 ---
 
-## Estrutura do Projeto
+## 🧪 Tecnologias Utilizadas
+
+- **HTML5** e **CSS3** com **TailwindCSS** para uma estilização ágil e moderna  
+- **JavaScript** para comportamento dinâmico e animações  
+- **Font Awesome** para utilização de ícones  
+- **Imagens e ícones personalizados** localizados na pasta `/assets`  
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```
 .
@@ -48,24 +48,23 @@ O projeto apresenta uma landing page moderna, responsiva e interativa, destacand
 
 ---
 
-## Como Executar
+## 🚀 Como Executar Localmente
 
-1. **Clone ou baixe este repositório.**
-2. **Abra o arquivo `index.html` em seu navegador.**
-3. **Navegue pelas seções, cards e recursos interativos.**
+1. Clone ou baixe este repositório.
+2. Abra o arquivo `index.html` diretamente no navegador.
+3. Explore as seções, cards interativos e recursos visuais da página.
 
-Não é necessário nenhum servidor ou instalação de dependências para visualização local.
-
----
-
-## Créditos
-
-Projeto desenvolvido por:
-- Maria Eduarda Ferrés - RM 560418
-- Gabriela Queiroga Cocuzza da Silva - RM 560035
+> Nenhuma instalação de dependências ou servidor é necessária.
 
 ---
 
-## Licença
+## 👥 Desenvolvedoras
 
-© 2025 DrainMind. Todos os direitos reservados. 
+- **Maria Eduarda Ferrés** — RM 560418  
+- **Gabriela Queiroga Cocuzza da Silva** — RM 560035  
+
+---
+
+## 📄 Licença
+
+© 2025 **DrainMind**. Todos os direitos reservados.
