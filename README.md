@@ -66,6 +66,8 @@ A landing page do projeto apresenta uma interface moderna, responsiva e interati
 
 ## 👥 Desenvolvedoras
 
+1ESPB
+
 - **Maria Eduarda Ferrés** — RM 560418  
 - **Gabriela Queiroga Cocuzza da Silva** — RM 560035  
 
